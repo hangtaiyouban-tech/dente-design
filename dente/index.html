@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dente｜FPS配信者</title>
+<meta name="description" content="Twitchで配信しているFPSプレイヤー Dente の公式ページ。配信スケジュール、感度・クロスヘア、使用デバイス、お仕事のご相談はこちら。">
+<meta property="og:title" content="Dente｜FPS配信者">
+<meta property="og:type" content="profile">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Dentedj7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="logo"><span class="mark">Dente</span><span class="sub">Streamer</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">MENU</button>
+    <nav class="nav" id="nav">
+      <a href="#schedule">SCHEDULE</a>
+      <a href="#settings">SETTINGS</a>
+      <a href="#gear">GEAR</a>
+      <a href="#business" class="nav-cta">BUSINESS</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!--
+    ★ 仮の値です。公開前に差し替えてください ★
+    ランク / 感度 / DPI / クロスヘアコード / デバイス名 / 配信スケジュール / 自己紹介
+  -->
+
+  <section class="hero">
+    <div class="wrap profile-hero">
+      <!-- TODO: プロフィール画像に差し替え（<img src="avatar.png" class="avatar" alt="Dente">） -->
+      <div class="avatar" aria-hidden="true">D</div>
+      <div>
+        <a href="https://www.twitch.tv/dente110" target="_blank" rel="noopener" class="live-badge">TWITCH / dente110</a>
+        <h1 style="margin-top:20px">Dente</h1>
+        <p class="lead">VALORANTを中心に、FPS・TPSを配信しています。最高ランクはImmortal 2、ロールはフレックス。ランクを本気で上げる配信と、ゆるく遊ぶ配信を気分で。コメントはいつでも歓迎です。</p>
+        <div class="hero-actions" style="margin-top:32px">
+          <a href="https://www.twitch.tv/dente110" class="btn btn-primary" target="_blank" rel="noopener">配信を見る</a>
+          <a href="https://x.com/Dentedj7" class="btn btn-ghost" target="_blank" rel="noopener">Xをフォロー</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="stats">
+        <div><div class="k">Main game</div><div class="v">VALORANT</div></div>
+        <div><div class="k">Peak rank</div><div class="v">Immortal 2</div></div>
+        <div><div class="k">Role</div><div class="v">Flex</div></div>
+        <div><div class="k">eDPI</div><div class="v">224</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Schedule</p>
+        <h2 class="h2">配信スケジュール</h2>
+        <p class="lead">配信は不定期です。始めるときはXでお知らせするので、フォローしておくと見逃しません。</p>
+      </div>
+      <div class="hero-actions">
+        <a href="https://x.com/Dentedj7" class="btn btn-ghost" target="_blank" rel="noopener">Xで配信の告知を見る</a>
+        <a href="https://www.twitch.tv/dente110" class="btn btn-ghost" target="_blank" rel="noopener">Twitchをフォロー</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="settings">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Settings</p>
+        <h2 class="h2">感度・クロスヘア</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <table class="kv">
+            <tr><th>DPI</th><td>1600</td></tr>
+            <tr><th>ゲーム内感度</th><td>0.14</td></tr>
+            <tr><th>eDPI</th><td>224</td></tr>
+            <tr><th>スコープ感度倍率</th><td>0.8</td></tr>
+            <tr><th>ポーリングレート</th><td>1000 Hz</td></tr>
+            <tr><th>解像度</th><td>1920 × 1080</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 6px;font-size:17px">クロスヘア</h3>
+          <p style="margin:0;color:var(--muted);font-size:14px">ゲーム内の［設定 → クロスヘア → プロファイルをインポート］に貼り付けると、同じクロスヘアになります。</p>
+          <div class="code-box">
+            <code id="xhair">0;P;c;5;h;0;0l;4;0o;2;0a;1;0f;0;1b;0</code>
+            <button class="copy-btn" data-copy="xhair">コピー</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gear">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Gear</p>
+        <h2 class="h2">使っているデバイス</h2>
+        <p class="lead">※ このページのリンクには広告（Amazonアソシエイト）が含まれます。Amazonのアソシエイトとして、Denteは適格販売により収入を得ています。</p>
+      </div>
+      <!-- TODO: 機種名と購入リンク（Amazonアソシエイトなど）に差し替え -->
+      <div class="device"><div><div class="type">Mouse</div><div class="name">Logicool G PRO X SUPERLIGHT 2</div></div><a href="#" target="_blank" rel="sponsored nofollow noopener">Amazonで見る →</a></div>
+      <div class="device"><div><div class="type">Mousepad</div><div class="name">ARTISAN 99式 XSOFT</div></div><a href="#" target="_blank" rel="sponsored nofollow noopener">Amazonで見る →</a></div>
+      <div class="device"><div><div class="type">Keyboard</div><div class="name">AIM1 瞬 MATATAKI</div></div><a href="#" target="_blank" rel="sponsored nofollow noopener">Amazonで見る →</a></div>
+      <div class="device"><div><div class="type">Headset</div><div class="name">Sony INZONE H9</div></div><a href="#" target="_blank" rel="sponsored nofollow noopener">Amazonで見る →</a></div>
+    </div>
+  </section>
+
+  <section id="business">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Business</p>
+        <h2 class="h2">お仕事のご相談</h2>
+        <p class="lead">企業案件・コラボ・大会のキャスターなど、お気軽にご連絡ください。</p>
+      </div>
+      <div class="hero-actions">
+        <a href="https://x.com/Dentedj7" class="btn btn-primary" target="_blank" rel="noopener">XのDMで連絡する</a>
+        <!-- TODO: GoogleフォームのURLに差し替え -->
+        <a href="#" class="btn btn-ghost">フォームから連絡する</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-bottom:0">
+    <div class="wrap">
+      <div class="made-by">
+        <p class="eyebrow" style="margin-bottom:12px">Made by Dente Design</p>
+        <p>このページは Dente Design が制作しました。<br>配信者・ゲーミングチームのサイトも作っています。</p>
+        <a href="../" class="btn btn-ghost">自分のサイトを相談する</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>© <span id="y">2026</span> Dente</div>
+    <div class="links">
+      <a href="https://www.twitch.tv/dente110" target="_blank" rel="noopener">Twitch</a>
+      <a href="https://x.com/Dentedj7" target="_blank" rel="noopener">X</a>
+      <a href="../">Dente Design</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btn = document.querySelector('.menu-btn');
+  const nav = document.getElementById('nav');
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  document.querySelectorAll('.copy-btn').forEach(b => b.addEventListener('click', async () => {
+    const text = document.getElementById(b.dataset.copy).textContent;
+    try { await navigator.clipboard.writeText(text); b.textContent = 'コピーしました'; }
+    catch (e) { b.textContent = '選択してコピー'; }
+    setTimeout(() => b.textContent = 'コピー', 1600);
+  }));
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

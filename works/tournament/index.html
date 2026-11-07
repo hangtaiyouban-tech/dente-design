@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Clutch Cup #5｜見本サイト by Dente Design</title>
+<meta name="description" content="コミュニティ大会ページの見本（架空の大会）。Dente Design制作。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0710;--bg2:#140e1c;--bg3:#1c1427;--line:#2a2036;--text:#f3eefa;--muted:#a093b3;--accent:#ff4d6d;--gold:#ffc857}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans JP",system-ui,sans-serif;line-height:1.75}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}@media(max-width:600px){.wrap{padding:0 16px}}
+.sample{background:var(--gold);color:#1a1200;font-size:12px;font-weight:700;text-align:center;padding:8px 16px}.sample a{text-decoration:underline}
+.hero{padding:96px 0 80px;text-align:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 360px at 50% -10%,rgba(255,77,109,.28),transparent 70%),radial-gradient(400px 300px at 90% 100%,rgba(255,200,87,.10),transparent)}
+.hero .wrap{position:relative}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--accent);border:1px solid rgba(255,77,109,.5);padding:4px 14px;border-radius:999px}
+.hero h1{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:clamp(60px,13vw,140px);line-height:.9;margin:22px 0 10px;letter-spacing:.02em}
+.hero h1 span{color:var(--accent)}
+.hero .date{font-size:18px;font-weight:700;letter-spacing:.06em}
+.count{display:flex;justify-content:center;gap:10px;margin:36px 0}
+.count div{background:var(--bg2);border:1px solid var(--line);border-radius:12px;min-width:76px;padding:12px 8px}
+.count b{display:block;font-family:"Bebas Neue",sans-serif;font-size:40px;font-weight:400;line-height:1}
+.count small{font-size:11px;color:var(--muted);letter-spacing:.14em}
+.btn{display:inline-block;padding:15px 34px;border-radius:999px;font-weight:700;letter-spacing:.06em}
+.btn-p{background:var(--accent);color:#fff;box-shadow:0 10px 30px rgba(255,77,109,.35)}
+.btn-g{border:1px solid var(--line);background:var(--bg2)}
+.btns{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.note{color:var(--muted);font-size:13px;margin-top:14px}
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+.h{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:48px;letter-spacing:.04em;margin:0;line-height:1}
+.sub{color:var(--muted);margin:6px 0 36px;font-size:14px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}@media(max-width:760px){.facts{grid-template-columns:repeat(2,1fr)}}
+.facts div{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:22px}
+.facts small{color:var(--muted);font-size:12px;letter-spacing:.12em}.facts b{display:block;font-size:20px;margin-top:4px}
+.prize{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:12px}@media(max-width:700px){.prize{grid-template-columns:1fr}}
+.prize > div{border-radius:16px;padding:28px;background:var(--bg2);border:1px solid var(--line)}
+.prize .first{background:linear-gradient(140deg,#2a1d07,#1a1209);border-color:rgba(255,200,87,.5)}
+.prize .pl{font-family:"Bebas Neue",sans-serif;font-size:34px;line-height:1}.prize .first .pl{color:var(--gold)}
+.prize p{margin:8px 0 0;color:var(--muted);font-size:14px}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.tl b{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:24px;color:var(--accent);line-height:1.3}
+.bracket{display:grid;grid-template-columns:repeat(4,minmax(150px,1fr));gap:18px;overflow-x:auto;padding-bottom:8px}
+.round h4{margin:0 0 12px;font-size:12px;letter-spacing:.16em;color:var(--muted)}
+.round{display:flex;flex-direction:column}
+.games{display:flex;flex-direction:column;justify-content:space-around;flex:1;gap:12px}
+.game{background:var(--bg2);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:13px}
+.game div{display:flex;justify-content:space-between;padding:8px 12px}.game div+div{border-top:1px solid var(--line)}
+.game .w{font-weight:700}.game .w span{color:var(--accent)}.game .tbd{color:var(--muted)}
+.bracket-wrap{overflow-x:auto}
+.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}@media(max-width:700px){.rules{grid-template-columns:1fr}}
+.rules div{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:22px}.rules h3{margin:0 0 6px;font-size:16px}.rules p{margin:0;color:var(--muted);font-size:14px}
+footer{padding:40px 0;color:var(--muted);font-size:12px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}footer a{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="sample">これは Dente Design の見本サイトです（大会・チームはすべて架空）　<a href="../../">Dente Designに戻る</a></div>
+
+<section class="hero"><div class="wrap">
+  <span class="tag">VALORANT COMMUNITY CUP</span>
+  <h1>MIDNIGHT<br><span>CLUTCH</span> CUP #5</h1>
+  <div class="date">2026.11.22 SAT — 11.23 SUN</div>
+  <div class="count" id="count" aria-label="開催までのカウントダウン">
+    <div><b id="cd-d">--</b><small>DAYS</small></div><div><b id="cd-h">--</b><small>HOURS</small></div><div><b id="cd-m">--</b><small>MIN</small></div>
+  </div>
+  <div class="btns"><a href="#entry" class="btn btn-p">エントリーする</a><a href="#bracket" class="btn btn-g">トーナメント表</a></div>
+  <p class="note">エントリー締切：11.18（火）23:59｜参加費無料</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="h">OVERVIEW</h2><p class="sub">大会概要</p>
+  <div class="facts">
+    <div><small>FORMAT</small><b>5v5 シングルエリミ</b></div>
+    <div><small>TEAMS</small><b>最大16チーム</b></div>
+    <div><small>RANK</small><b>平均 Diamond 以上</b></div>
+    <div><small>STREAM</small><b>Twitchで配信</b></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="h">PRIZE</h2><p class="sub">賞品</p>
+  <div class="prize">
+    <div class="first"><div class="pl">1ST</div><p>賞金 30,000円 ＋ ゲーミングデバイス</p></div>
+    <div><div class="pl">2ND</div><p>賞金 10,000円</p></div>
+    <div><div class="pl">MVP</div><p>デバイス提供：スポンサー募集中</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="h">SCHEDULE</h2><p class="sub">当日の流れ</p>
+  <ul class="tl">
+    <li><b>11.22 19:30</b><div>チェックイン・ルール説明（Discord）</div></li>
+    <li><b>11.22 20:00</b><div>1回戦・準々決勝（Bo1）</div></li>
+    <li><b>11.23 20:00</b><div>準決勝（Bo1）</div></li>
+    <li><b>11.23 21:30</b><div>決勝（Bo3）・表彰</div></li>
+  </ul>
+</div></section>
+
+<section id="bracket"><div class="wrap">
+  <h2 class="h">BRACKET</h2><p class="sub">トーナメント表（前回 #4 の結果）</p>
+  <div class="bracket-wrap"><div class="bracket">
+    <div class="round"><h4>ROUND 1</h4><div class="games">
+      <div class="game"><div class="w">KIRIHA GAMING<span>13</span></div><div>Team Kaede<span>7</span></div></div>
+      <div class="game"><div>Shirobara<span>9</span></div><div class="w">Team Aoarashi<span>13</span></div></div>
+      <div class="game"><div class="w">Hoshikuzu<span>13</span></div><div>Neko Strike<span>11</span></div></div>
+      <div class="game"><div>Asagiri<span>6</span></div><div class="w">Ryusei<span>13</span></div></div>
+    </div></div>
+    <div class="round"><h4>SEMI FINAL</h4><div class="games">
+      <div class="game"><div class="w">KIRIHA GAMING<span>13</span></div><div>Team Aoarashi<span>10</span></div></div>
+      <div class="game"><div>Hoshikuzu<span>12</span></div><div class="w">Ryusei<span>14</span></div></div>
+    </div></div>
+    <div class="round"><h4>FINAL (Bo3)</h4><div class="games">
+      <div class="game"><div class="w">KIRIHA GAMING<span>2</span></div><div>Ryusei<span>1</span></div></div>
+    </div></div>
+    <div class="round"><h4>CHAMPION</h4><div class="games">
+      <div class="game" style="border-color:rgba(255,200,87,.6)"><div class="w" style="color:var(--gold)">KIRIHA GAMING</div></div>
+    </div></div>
+  </div></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="h">RULES</h2><p class="sub">主なルール（詳細はDiscordで案内）</p>
+  <div class="rules">
+    <div><h3>参加資格</h3><p>メンバー5名＋補欠1名まで。チーム平均ランクがDiamond以上。</p></div>
+    <div><h3>マップ</h3><p>現行のコンペマッププールから、BAN/PICK方式で決定。</p></div>
+    <div><h3>遅刻・欠場</h3><p>試合開始から15分を過ぎても揃わない場合は不戦敗。</p></div>
+    <div><h3>マナー</h3><p>暴言・チート・代理プレイは失格。運営の判断が最終決定です。</p></div>
+  </div>
+</div></section>
+
+<section id="entry" style="text-align:center;border-bottom:0"><div class="wrap">
+  <h2 class="h">ENTRY</h2><p class="sub">チーム代表者がフォームから申し込んでください</p>
+  <div class="btns"><a href="#" class="btn btn-p">エントリーフォームへ</a><a href="#" class="btn btn-g">Discordに参加</a></div>
+</div></section>
+
+<footer><div class="wrap"><div>主催：Midnight Clutch 運営（架空）</div><div>Website by <a href="../../">Dente Design</a></div></div></footer>
+
+<script>
+  const target = new Date('2026-11-22T20:00:00+09:00').getTime();
+  function tick(){
+    let s = Math.max(0, Math.floor((target - Date.now())/1000));
+    const d = Math.floor(s/86400); s%=86400; const h = Math.floor(s/3600); s%=3600; const m = Math.floor(s/60);
+    document.getElementById('cd-d').textContent = String(d).padStart(2,'0');
+    document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+  }
+  tick(); setInterval(tick, 30000);
+</script>
+</body>
+</html>
